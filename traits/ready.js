@@ -3,7 +3,7 @@ const rpc = require("discordrpcgenerator");
 const config = require(".././config.json")
 module.exports = (client) => {
 
-rpc.getRpcImage(config.applicationid, config.imagenamesatu).then(large => {
+rpc.getRpcImage(config.applicationid, config.imagename).then(large => {
 
   
       
@@ -17,7 +17,7 @@ rpc.getRpcImage(config.applicationid, config.imagenamesatu).then(large => {
              .setState(config.state)
              .setDetails(config.details)
              .setAssetsLargeImage(large.id)
-             .serAssetsSmallImage(small.id)           
+                      
               
          
               .setStartTimestamp(Date.now())
